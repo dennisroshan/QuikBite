@@ -22,22 +22,21 @@ function Hero() {
         <div className="hero-container">
             <div className="hero">
                 <div className="hero-text">
-                    <h1>Create a unique, professional logo for your business</h1>
-                    <p>Kickstart your brand with business card designs, social media graphics, app icons, letterheads, and more.</p>
-                    <a href="#services" className="btn">Create my logo</a>
+                    <h1>THEATER FOOD DEVIVERING APP</h1>
+                    <p>MAKE YOUR MOVIE SPECIAL</p>
+                    <a href="#services" className="btn">ORDER NOW</a>
                 </div>
                 <div className="hero-carousel">
-    {slides.map((slide, index) => (
-        <div key={index} className={`hero-image-container ${index === currentSlide ? 'active' : ''}`}>
-            <img
-                src={slide}
-                alt={`Slide ${index + 1}`}
-                className="hero-image"
-            />
-            {slide === undefined && <div className="fallback-text">Image {index + 1} not found</div>}
-        </div>
-    ))}
-</div>
+                    {slides.map((slide, index) => (
+                        <div key={index} className={`hero-image-container ${index === currentSlide ? 'active' : ''}`}>
+                            <img
+                                src={slide}
+                                alt={`Slide ${index + 1}`}
+                                className="hero-image"
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

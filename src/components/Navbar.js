@@ -20,9 +20,7 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Tools</a>
-                        </li>
+                        
                         <li className="nav-item">
                             <a className="nav-link" href="#">Pricing</a>
                         </li>

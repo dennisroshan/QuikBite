@@ -1,90 +1,60 @@
-/* Brand Section Styling */
 .brand-section {
-    background-color: #f4f6f8; /* Light gray background */
-    padding: 60px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
+    background-color: #f8f8f8;
 }
 
 .brand-content {
     display: flex;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.brand-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 30px;
+    flex-wrap: wrap;
 }
 
 .brand-image img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
     height: auto;
-    border-radius: 10px;
 }
 
 .brand-text {
-    flex: 1;
-    padding-left: 30px;
+    max-width: 50%;
 }
 
 .brand-text h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
-}
-
-.brand-text p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.brand-text .highlight {
-    font-weight: bold;
-    color: #4a90e2; /* Blue highlight */
 }
 
 .brand-features {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .brand-features ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .brand-features li {
-    margin-bottom: 10px;
     font-size: 1rem;
-    color: #333;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-.icon {
-    margin-right: 10px;
-    font-size: 1.5rem;
-}
-
-.btn {
-    background-color: #4a90e2;
+.brand-text .btn {
+    background-color: #333;
     color: #fff;
     padding: 10px 30px;
-    font-size: 1.2rem;
     border-radius: 30px;
     text-decoration: none;
-    display: inline-block;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #357ABD;
+.brand-text .btn:hover {
+    background-color: #000;
 }
 
 /* Responsive Adjustments */
@@ -94,21 +64,21 @@
         text-align: center;
     }
 
-    .brand-image,
     .brand-text {
-        padding: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .brand-image img {
+        max-width: 80%;
     }
 
     .brand-features {
         flex-direction: column;
+        align-items: center;
     }
 
     .brand-features ul {
         margin-bottom: 20px;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 15px 0;
     }
 }

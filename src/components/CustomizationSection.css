@@ -1,27 +1,21 @@
-/* Customization Section Styling */
 .customization-section {
-    background-color: #f4f6f8; /* Light gray background */
-    padding: 60px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
+    background-color: #f0f0f0;
 }
 
 .customization-content {
     display: flex;
-    max-width: 1200px;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .customization-text {
-    flex: 1;
-    padding-right: 30px;
+    max-width: 50%;
 }
 
 .customization-text h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
 }
@@ -29,18 +23,13 @@
 .customization-text p {
     font-size: 1.2rem;
     color: #666;
-}
-
-.customization-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    margin-bottom: 30px;
 }
 
 .customization-image img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
     height: auto;
-    border-radius: 10px;
 }
 
 /* Responsive Adjustments */
@@ -51,11 +40,11 @@
     }
 
     .customization-text {
-        padding: 0;
-        margin-bottom: 30px;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
-    .customization-image {
-        justify-content: center;
+    .customization-image img {
+        max-width: 80%;
     }
 }

@@ -1,14 +1,14 @@
 /* Hero Section Styling */
 .hero-container {
   padding: 50px;
-  background-color: #FFD454; /* Background color similar to your reference */
+  background-color: #FFD454; /* Background color */
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .hero-text {
@@ -42,26 +42,28 @@
 }
 
 .hero-carousel {
-  position: relative;
-  max-width: 40%; /* Adjust the size of the carousel */
+  max-width: 40%;
   overflow: hidden;
-  border-radius: 10px;
-  height: auto; /* Adjust height to be consistent with images */
+  position: relative;
 }
 
-.hero-image {
+.hero-image-container {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  opacity: 0;
+  height: 100%;
   transition: opacity 1s ease-in-out;
-  border-radius: 10px;
 }
 
-.hero-image.active {
+.hero-image-container.active {
   opacity: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
 }
 
 /* Responsive Adjustments */
@@ -77,10 +79,6 @@
   }
 
   .hero-carousel {
-      max-width: 100%; /* Adjust carousel size for smaller screens */
-  }
-
-  .hero-image {
-      width: 100%; /* Ensure the image takes full width on mobile */
+      max-width: 100%;
   }
 }
