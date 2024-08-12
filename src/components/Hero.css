@@ -1,0 +1,86 @@
+/* Hero Section Styling */
+.hero-container {
+  padding: 50px;
+  background-color: #FFD454; /* Background color similar to your reference */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero-text .btn {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background-color: #000;
+}
+
+.hero-carousel {
+  position: relative;
+  max-width: 40%; /* Adjust the size of the carousel */
+  overflow: hidden;
+  border-radius: 10px;
+  height: auto; /* Adjust height to be consistent with images */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.hero-image.active {
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-text {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .hero-carousel {
+      max-width: 100%; /* Adjust carousel size for smaller screens */
+  }
+
+  .hero-image {
+      width: 100%; /* Ensure the image takes full width on mobile */
+  }
+}

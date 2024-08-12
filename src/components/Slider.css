@@ -1,0 +1,30 @@
+/* Slider Container Styling */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Slider Images Styling */
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slider-image {
+        width: 100%;
+    }
+}

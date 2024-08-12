@@ -1,0 +1,104 @@
+/* Customer Creations Section Styling */
+.customer-creations-section {
+    padding: 60px 50px;
+    background-color: #f4f6f8; /* Light gray background */
+    text-align: center;
+}
+
+/* Header Styling */
+.header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Editor Image Section */
+.editor-image {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.editor-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.label-top-left {
+    top: 10%;
+    left: 5%;
+}
+
+.label-top-right {
+    top: 10%;
+    right: 5%;
+}
+
+.label-bottom-left {
+    bottom: 10%;
+    left: 5%;
+}
+
+/* Creations Grid */
+.creations-grid {
+    margin-top: 50px;
+}
+
+.creations-grid h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding-left:600px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+}

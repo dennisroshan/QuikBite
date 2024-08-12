@@ -1,0 +1,61 @@
+/* Customization Section Styling */
+.customization-section {
+    background-color: #f4f6f8; /* Light gray background */
+    padding: 60px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customization-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.customization-text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.customization-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.customization-text p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.customization-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.customization-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .customization-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .customization-text {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .customization-image {
+        justify-content: center;
+    }
+}

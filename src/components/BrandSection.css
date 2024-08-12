@@ -1,0 +1,114 @@
+/* Brand Section Styling */
+.brand-section {
+    background-color: #f4f6f8; /* Light gray background */
+    padding: 60px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.brand-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.brand-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.brand-text {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.brand-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.brand-text p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.brand-text .highlight {
+    font-weight: bold;
+    color: #4a90e2; /* Blue highlight */
+}
+
+.brand-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.brand-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brand-features li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #357ABD;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .brand-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-image,
+    .brand-text {
+        padding: 0;
+    }
+
+    .brand-features {
+        flex-direction: column;
+    }
+
+    .brand-features ul {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
