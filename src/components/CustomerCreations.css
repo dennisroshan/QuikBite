@@ -1,87 +1,20 @@
 .customer-creations-section {
-    padding: 50px;
-    background-color: #ffffff;
+    background-color: #f6f8fa; /* light grey background color */
 }
 
-.header h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.header p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.editor-image {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.editor-image img {
-    width: 100%;
-    max-width: 600px;
+.customer-creations-section img {
+    max-width: 100%;
     height: auto;
-    border: 1px solid #ccc;
+    opacity: 0.6; /* Faded logo effect */
 }
 
-.labels .label {
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 0.9rem;
+.grayscale {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-.label-top-left {
-    top: 10px;
-    left: 10px;
-}
-
-.label-top-right {
-    top: 10px;
-    right: 10px;
-}
-
-.label-bottom-left {
-    bottom: 10px;
-    left: 10px;
-}
-
-.creations-grid {
-    text-align: center;
-}
-
-.creations-grid h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.grid img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin: 10px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .editor-image img {
-        max-width: 100%;
-    }
-
-    .grid img {
-        width: 80px;
-        height: 80px;
-    }
+.grayscale:hover {
+    filter: grayscale(0%);
+    opacity: 1;
 }

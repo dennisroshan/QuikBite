@@ -1,6 +1,6 @@
 import React from 'react';
-import WeatherWidget from './WeatherWidget'; // Import the WeatherWidget component
-import './Navbar.css'; // Import custom styles for Navbar
+import WeatherWidget from './WeatherWidget';
+import './Navbar.css';
 
 function Navbar() {
     return (
@@ -20,7 +20,9 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
-                        
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Tools</a>
+                        </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Pricing</a>
                         </li>
@@ -32,7 +34,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="weather-widget-nav">
-                        <WeatherWidget /> {/* Weather widget inside the navbar */}
+                        <WeatherWidget />
                     </div>
                 </div>
             </div>

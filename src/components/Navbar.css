@@ -1,72 +1,20 @@
-/* Navbar Styling */
 .navbar {
-    display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center;
-    padding: 20px 50px; /* Ensure the padding matches the hero section */
-    background-color: #FFD454; /* The yellow background */
-}
-
-/* Adjust the left padding for smaller screens */
-@media (max-width: 992px) {
-    .navbar {
-        padding: 20px 30px; /* Reduce padding for smaller screens */
-    }
+    background-color: #FFD454;
 }
 
 .navbar-brand {
-    font-size: 2rem; /* Default font size for desktop */
-    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
     color: #333;
-    text-transform: uppercase;
-    margin-right: auto; /* Push the links to the right */
+    margin-right: 20px;
 }
 
-.navbar-links {
-    display: flex;
-    gap: 20px;
+.navbar-nav .nav-link:hover {
+    color: #555;
 }
 
-.navbar-link {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.navbar-link:hover {
-    color: #000;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start; /* Align content to the left in mobile view */
-        padding: 20px 30px;
-    }
-
-    .navbar-brand {
-        font-size: 2.5rem; /* Larger font size for mobile */
-        margin-bottom: 10px;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .navbar-link {
-        font-size: 1.5rem; /* Increase link size for better touch interaction */
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar-brand {
-        font-size: 3rem; /* Even larger font size for mobile */
-    }
-
-    .navbar-link {
-        font-size: 1.8rem; /* Larger links for very small screens */
-    }
+.weather-widget-nav {
+    margin-left: 20px;
 }

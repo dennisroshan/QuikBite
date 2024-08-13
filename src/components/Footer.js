@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Make sure to create this CSS file
+import './Footer.css';
 
 function Footer() {
     return (
@@ -7,15 +7,12 @@ function Footer() {
             <div className="footer-links">
                 <div className="footer-column">
                     <h4>VISIT</h4>
-                    
                 </div>
                 <div className="footer-column">
                     <h4>Support</h4>
-                  
                 </div>
                 <div className="footer-column">
-                    <h4>contact</h4>
-                    
+                    <h4>Contact</h4>
                 </div>
             </div>
             <div className="footer-bottom">
