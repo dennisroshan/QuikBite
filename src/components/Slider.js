@@ -9,21 +9,20 @@ function Slider() {
     const slides = [
         {
             avatar: avatar1,
-            quote: "I'm not a designer, when I had to make a logo I found myself staring at a blank screen. Brandmark made the process actually enjoyable",
+            quote: "GOOD AND TASTY FOOD",
             name: "Valentyna Kuzmych",
-            position: "CEO, PubLaw Project"
+            position: "⭐⭐⭐⭐⭐"
         },
         {
             avatar: avatar2,
-            quote: "I tried other logo makers and Brandmark is the best value. Quality is exceptional and includes a complete branding solution for my company",
+            quote: "DELIVERED ON TIME",
             name: "Courtney Costrino",
-            position: "Founder, Noble Tide LLC"
+            position: "⭐⭐⭐⭐⭐"
         },
         {
             avatar: avatar3,
-            quote: "I was afraid to pay thousands for a logo that didn't turn out right for my business. The Brandmark team helped me create a logo that I love!",
-            name: "Sarah Locatelli",
-            position: "Founder, Loctia"
+            quote: "AMAZING CUSTOMER EXPERIENCE",
+            position: "⭐⭐⭐"
         }
     ];
 
